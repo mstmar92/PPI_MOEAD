@@ -16,7 +16,7 @@ def create_population_overlapping(protein_pairs, population_size):
                 continue
 
             if protein_pairs[j, 0] in [node_a, node_b] or protein_pairs[j, 1] in [node_a, node_b]:
-                adjacent_edges[i].append(j + 1)  # keep MATLAB style indexing
+                adjacent_edges[i].append(j + 1)  
 
     population = []
     for _ in range(population_size):
